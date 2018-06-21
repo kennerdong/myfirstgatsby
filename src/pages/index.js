@@ -12,7 +12,7 @@ const IndexPage = () => (
       Environment: {process.env.NODE_ENV}
     </p>
     <p>
-      Test Key: {process.env.REACT_APP_TEST_KEY}
+      Test Key: {process.env.TEST_KEY}
     </p>
     <SubscribeEmail />
   </div>
