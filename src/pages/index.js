@@ -14,6 +14,9 @@ const IndexPage = () => (
     <p>
       Test Key: {process.env.TEST_KEY}
     </p>
+    <p>
+      Mailchimp Endpoint: {process.env.MAILCHIMP_API_ENDPOINT}
+    </p>
     <SubscribeEmail />
   </div>
 )
