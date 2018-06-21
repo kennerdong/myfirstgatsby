@@ -64,13 +64,11 @@ export default class SubscribeEmail extends Component{
         This code handles submit using axios API call to Mailchimp.
     */
     _handleSubmit = e => {
-
-        let authenticationString = btoa(`randomstring:${MAILCHIMP_API_KEY}`);
-        authenticationString = "Basic " + authenticationString;
         e.preventDefault();
         const LIST_ID = "b94198e394";
         const { MAILCHIMP_API_ENDPOINT, MAILCHIMP_API_KEY } = process.env;
-        const url = `${MAILCHIMP_API_ENDPOINT}/LISTS/${LIST_ID}/members`;
+        const url = `${MAILCHIMP_API_ENDPOINT}/lists/${LIST_ID}/members`;
+        console.log(url);
 
         const axios_instance = axios.create({
             auth:{
