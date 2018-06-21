@@ -9,6 +9,9 @@ const IndexPage = () => (
     <p>Now go build something great.</p>
     <Link to="/page-2/">Go to page 2</Link>
     <p>
+      Environment: {process.env.NODE_ENV}
+    </p>
+    <p>
       Test Key: {process.env.TEST_KEY}
     </p>
     <SubscribeEmail />
