@@ -11,3 +11,4 @@ fs.writeFileSync(
     './.env.production', 
     content
 );
+console.log(fs.readFileSync(`./.env.production`).toString());
